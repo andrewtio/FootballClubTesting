@@ -1,8 +1,8 @@
-package com.andrew.associate.footballclub.main
+package com.andrew.associate.footballclub.teams
 
 import com.andrew.associate.footballclub.model.Team
 
-interface MainView {
+interface TeamsView {
     fun showLoading()
     fun hideLoading()
     fun showTeamList(data: List<Team>)

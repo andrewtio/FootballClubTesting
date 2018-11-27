@@ -1,15 +1,16 @@
-package com.andrew.associate.footballclub.main
+package com.andrew.associate.footballclub.teams
 
-import com.andrew.associate.footballclub.model.TeamResponse
 import com.andrew.associate.footballclub.api.ApiRepository
 import com.andrew.associate.footballclub.api.TheSportDBApi
+import com.andrew.associate.footballclub.model.TeamResponse
 import com.google.gson.Gson
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 
-class MainPresenter(private val view: MainView,
-                    private val apiRepository: ApiRepository,
-                    private val gson: Gson) {
+class TeamsPresenter(private val view: TeamsView,
+                     private val apiRepository: ApiRepository,
+                     private val gson: Gson
+) {
 
     fun getTeamList(league: String?) {
         view.showLoading()
@@ -25,6 +26,4 @@ class MainPresenter(private val view: MainView,
             }
         }
     }
-
 }
-
