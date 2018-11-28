@@ -209,7 +209,7 @@ class TeamDetailActivity : AppCompatActivity(), TeamDetailView {
             swipeRefresh.snackbar(e.localizedMessage).show()
         }
     }
-
+    // test merge
     private fun setFavorite() {
         if (isFavorite)
             menuItem?.getItem(0)?.icon = ContextCompat.getDrawable(this, ic_added_to_favorites)
